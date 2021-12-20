@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MY COFFEE</title>
+  
+    <link rel="stylesheet" href="coffee.css" />
+    <script>
+      window.onscroll = function() { Scroll()};
+      function Scroll() {
+        if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+          document.getElementById("id-navi").className = "navi-slidedown";
+        }
+        if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+          document.getElementById("id-about-scroll").className = "scroll-about";
+        }
+      }
+
+      function menuButtonSnacks(){
+        document.getElementById("id-drinks").className = "menu-button-off";
+        document.getElementById("id-snacks").className = "menu-button-on";
+        document.getElementById("id-menu-snacks").className = "menu-snacks-on";
+        document.getElementById("id-menu-drinks").className = "menu-drinks-off";
+      }
+      function menuButtonDrinks(){
+        document.getElementById("id-drinks").className = "menu-button-on";
+        document.getElementById("id-snacks").className = "menu-button-off";
+        document.getElementById("id-menu-snacks").className = "menu-snacks-off";
+        document.getElementById("id-menu-drinks").className = "menu-drinks-on";
+      }
+
+
+
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="main">
+        <a class="logo" href="#"><img src="C:\\Users\\DELL\\Downloads\\m7.jpg" height="30px"></a>
+        <div class="fix" >
+          <a class="a1" href="#id-contact">CONTACT US</a>
+          <a class="a1" href="#id-menu">DISCOVER</a>
+          <a class="a1" href="#id-about">ABOUT US</a>
+          <a class="a1" href="#">HOME</a>
+        </div>
+      </section>
+      <img src="C:\\Users\\DELL\\Downloads\\c5.jpg" height="700px" width="1500px">
+      <div class="fix-background" id="id-navi" ></div>
+      <div class="banner">
+        <h1 class="banner-title">MY COFFEE</h1>
+        <h3 class="banner-subtitle">"Flavour Of My Life ! "</h3>
+      </div>
+      <div class="banner-bottom"><a href="#id-skills"><img src="C:\\Users\\DELL\\Downloads\\b2.jpg"></a></div>
+    </header>
+    <div class="content-divider"></div>
+
+    <section class="skills" id="id-skills" style="background-color:#;">
+      <!-- single skill -->
+      <article class="skill1">
+        <center><img src="C:\\Users\\DELL\\Downloads\\c6.jpg" height="45px"></center><br>
+        <h3 class="skill-title">INGREDIENTS</h3>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          porro.
+        </p>
+      </article>
+      <!--end single skill -->
+      <!-- single skill -->
+      <article class="skill2">
+        <center><img src="C:\\Users\\DELL\\Downloads\\c6.jpg" height="45px"></center><br>
+        <h3 class="skill-title">ENERGY</h3>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          porro.
+        </p>
+      </article>
+      <!--end single skill -->
+      <!-- single skill -->
+      <article class="skill1">
+        <center><img src="C:\\Users\\DELL\\Downloads\\c6.jpg" height="45px"></center><br>
+        <h3 class="skill-title">TYPES</h3>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          porro.
+        </p>
+      </article>
+      <!--end single skill -->
+      <!-- single skill -->
+      <article class="skill2">
+        <center><img src="C:\\Users\\DELL\\Downloads\\c6.jpg" height="45px"></center><br>
+        <h3 class="skill-title">RECIPE</h3>
+        <p class="skill-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          porro.
+        </p>
+      </article>
+      <!--end single skill -->
+    </section>
+
+    
+
+    <!-- about-section -->
+<div class="about">
+  <br>
+    <br>
+    <section class="about-section-center-clearfix" style="display: inline; background-color: darkgrey;" id="id-about">
+      <!-- <div class="section-center clearfix"> -->
+      <!-- first column  -->
+      <article class="about-img-1">
+        <div class="about-picture-container" >
+          <video autoplay muted loop id="myVideo">
+            <source src="videos/woman-drinking-coffee.mp4" type="video/mp4">
+            </video>
+        </div>
+      </article>
+      <!-- second column -->
+      <article class="about-info-1">
+        <!-- section title -->
+        <div class="about-scroll" id="id-about-scroll">
+          <!-- <img src="preloader.gif" height="40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+          <h3 class="section-subtitle">ABOUT</h3>
+          <h2 class="section-title">My Coffee's</h2>
+        
+        <!--end section title -->
+        <p class="about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+          dolores.
+        </p>
+        <p class="about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+          dolores.
+        </p>
+        <a href="#id-contact" class="main-btn">learn more</a>
+        <div class="main-btn-back"></div>
+      </div>
+      </article>
+
+      <div style="clear: both;"></div>
+    </section>
+  
+    <br>
+    <br>
+  </div>
+<!--Menu-->
+<div style="background-color:#E0E5EC; z-index: -1;">
+<section class="menu-template" id="id-menu">
+  <h1 class="menu-title">Discover</h1><br>
+  <center><h3 class="menu-subtitle">O U R &nbsp;&nbsp;M E N U</h3></center>
+</section><br><br>
+
+
+<section class="menu-header-container">
+  <div class="menu-hr-container"><hr class="menu-hr"></div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" id="id-drinks" class="menu-button-on" onclick="menuButtonDrinks()"><img src="C:\\Users\\DELL\\Downloads\\c7.jpg" class="menu-circle-image"></button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="button" id="id-snacks" class="menu-button-off" onclick="menuButtonSnacks()"><img src="C:\\Users\\DELL\\Downloads\\c8.jpg" class="menu-circle-image"></button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="menu-hr-container"><hr class="menu-hr"></div>
+</section>
+
+<!-- drinks menu -->
+<div class="menu-drinks-on" id="id-menu-drinks">
+
+<section class="menu" style="display: inline;">
+    <article class="menu-section">
+      <!-- first column -->
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f1.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">CAFFE AMERICANO</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- second column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f2.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">HOT COFFEE</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- third column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f3.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">CREAM LATTE</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- fourth column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f4.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">ICED LATTE</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div style="clear: both;"></div>
+    <br>
+  </section>
+  <section class="menu" style="display: inline;">
+    <article class="menu-section">
+      <!-- first column -->
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f5.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">COFFEE SHOTS</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- second column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f6.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">HERBAL</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- third column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f7.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">HERBAL CHERRY</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- fourth column -->
+    <article class="menu-section">
+      <div class="menu-flip-card">
+        <div class="menu-flip-card-inner">
+          <div class="menu-flip-card-front">
+            <img src="C:\\Users\\DELL\\Downloads\\f8.jpg" alt="Avatar" class="menu-image">
+          </div>
+          <div class="menu-flip-card-back">
+            <div class="menu-text"><h3 class="menu-text-title">FILTERED COFFEE</h3>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                dolores.
+              </p>
+              <h3 class="menu-text-title">₹ COST</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div style="clear: both;"></div>
+    <br>
+  </section>
+  <br>
+
+</div>
+<!-- drinks menu ending -->
+
+<!-- snacks menu -->
+<div class="menu-snacks-off" id="id-menu-snacks">
+
+  <section class="menu" style="display: inline;">
+      <article class="menu-section">
+        <!-- first column -->
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/29.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">PIZZA</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- second column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/21.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">FRIES</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- third column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/22.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">BURGER</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- fourth column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/24.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">SANDWICH</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <div style="clear: both;"></div>
+      <br>
+    </section>
+    <section class="menu" style="display: inline;">
+      <article class="menu-section">
+        <!-- first column -->
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/25.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">WTH IS THIS?</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- second column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/26.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">WAFFAL</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <!-- third column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/27.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">COOKIES</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- fourth column -->
+      <article class="menu-section">
+        <div class="menu-flip-card">
+          <div class="menu-flip-card-inner">
+            <div class="menu-flip-card-front">
+              <img src="Coffee/20.jpeg" alt="Avatar" class="menu-image">
+            </div>
+            <div class="menu-flip-card-back">
+              <div class="menu-text"><h3 class="menu-text-title">MIX BREAKFAST</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                  dolores.
+                </p>
+                <h3 class="menu-text-title">₹ COST</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <div style="clear: both;"></div>
+      <br>
+    </section>
+    <br>
+  
+  </div>
+
+  <!-- snacks menu ending -->
+
+<!--Response-->
+  <div class="back">
+    <section class="about-section-center-clearfix" style="display: inline; ">
+
+      <article class="about-img">
+        
+        <h3 class="response-title">YOUR RESPONSE</h3>
+      <br>
+      <form action="#">
+        <label for="fname">Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Alex Hunter"
+          required="Name"
+        /><label for="City">City</label>
+        <input type="text" id="city" name="cityname" placeholder="City Name" required="City Name" />
+
+        <label for="mail">E-Mail</label>
+        <input
+          type="email"
+          id="email"
+          name="mail"
+          placeholder="alexhunter@xyz.com"
+          required="Email"
+        />
+
+        
+        <label for="subject">Rate Us:</label><br>
+        <fieldset class="rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+          <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+          <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+          <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+          <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+          <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+          <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+          <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+          <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+          <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+      </fieldset>
+<br><br>
+        <label for="subject">Your Reviews</label>
+        <textarea
+          id="feedback"
+             name="feedback"
+          placeholder="Your Thoughts"
+          style="height:120px"
+        ></textarea>
+        
+
+      <p align="right"><input type="submit" value="Submit"></p>
+      </form>
+      </article>
+    
+          
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+      </article>
+      <div style="clear: both;"></div>
+    </section>
+  </div>
+  <!-- Contact -->
+  <section class="contact-template" id="id-contact">
+    <h1 class="contact-title">Contact</h1>
+  </section>
+
+  <div class="contact">
+    <section class="about-section-center-clearfix" style="display: inline; ">
+
+      
+      <!-- right column -->
+      <article class="contact-img">
+       <!-- second column -->
+        <br>
+        <!-- section title -->
+        <div class="opening-container">
+          <img src="Struct.jpg" alt="Snow" style="width:100%;">
+          <div class="opening-text ">
+            <h3>O P E N&nbsp;&nbsp;H O U R S</h3>
+              <p>
+                <strong>Monday: Closed</strong><br>
+                <strong>Tuesday to Friday</strong><br>
+                7:00 AM - 9:00 PM<br>
+                <strong>Saturday & Sunday</strong><br>
+                11:00 AM - 10:00 PM
+              </p>
+          </div>
+        </div>
+        
+
+        <!--end section title -->
+      </article>
+      <div style="clear: both;"></div>
+    </section>
+    <center>
+    <div class="contact-social">
+        <a class="contact-social-icons" href="#"><img src="C:\\Users\\DELL\\Downloads\\g4.jpg" weight="25" title="facebook" height="25"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="#"><img src="C:\\Users\\DELL\\Downloads\\g1.jpg" weight="25" title="instagram" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="#"><img src="C:\\Users\\DELL\\Downloads\\g5.jpg" weight="25" title="gmail" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="#"><img src="C:\\Users\\DELL\\Downloads\\g2.jpg" weight="25" title="gmail" height="25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="#"><img src="C:\\Users\\DELL\\Downloads\\g3.jpg" weight="25" title="whatsapp" height="25"></a> 
+    </div><br>
+    <p class="fontsettings">Copyright © 2020 | <a class="colorcover-link" href="#">Crafted Coffee's</a></p><br><br>
+  </div></center>
+  </body>
+</html>
